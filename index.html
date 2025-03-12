@@ -8,6 +8,9 @@
 		</head>
 
 		<body>
+		
+			<script src="assets/js/button.js"></script>
+		
 			<div class="entete">
 				<h1>Sabian Catalano</h1>
 				<h2>Licence 3 des Sciences du Langage</h2>
@@ -37,6 +40,17 @@
 					<li><i>1984</i>, George Orwell</li>
 					<li><i>Dune</i>, Frank Herbert</li>
 				</ol>
+			</div>
+			
+			<div id="DivNameButton">
+				<label for="nameInput">Comment vous vous appelez ?</label>
+				<input type="text" id="nameInput">
+				<button onclick="namebutton()">Submit</button>
+			</div>
+			
+			<div>
+				<button onclick="helpbutton()">Afficher de l'aide</button>
+				<p id="helptext"></p>
 			</div>
 
 			<footer class="footer">
