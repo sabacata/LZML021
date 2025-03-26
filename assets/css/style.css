@@ -53,3 +53,11 @@ div.entete {
 .footer {
 	text-align: center;
 }
+
+.mycode {
+	background-color: black; color: white;
+}
+
+.myoutput {
+	background-color: #CCCCCC; color: red;
+}
