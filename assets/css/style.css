@@ -42,16 +42,32 @@ div.center {
 	margin: 0 auto;
 }
 
+div.center2 {
+	width: 70%;
+	margin: 0 auto;
+}
+
 div.entete {
 	text-align: center;
 }
 
-.aboutme {
+div.divNameButton {
 	text-align: center;
 }
 
-.footer {
+
+.aboutme { /*Cette partie montre permet d'aligner tout ce qui se trouve dans le div "aboutme" */
 	text-align: center;
+}
+
+.footer {/*Cette partie permet de modifier l'encadré du footer et ce qui se trouve à l'intérieur (en l'occurence le lien vers le site de la fac */
+	text-align: center;
+	margin-top: 5px;
+	padding: 3px 8px;
+	background-color: #b988f1;
+	color: rgb(18, 108, 198);
+	border-radius: 3px;
+
 }
 
 .mycode {
@@ -60,4 +76,109 @@ div.entete {
 
 .myoutput {
 	background-color: #CCCCCC; color: red;
+}
+.btn{
+	
+	margin-top: 5px;
+	padding: 3px 8px;
+	background-color: #a27bcf56;
+	color: rgb(4, 58, 112);
+	border-radius: 3px;
+}
+
+.mylabel { /* Cette partie permet de mettre en forme les encadrés "délimiteurs", "pôle", "longueur" et "mots grammaticaux" */
+	display: inline-block;
+	margin-top: 5px; /* cette ligne rajoute une marge en haut ce qui évite que tous les encadrés soient collés les uns avec les autres */
+	margin-bottom: 5px;/* cette ligne rajoute un marge en bas ce qui évite que les encadrés soient collés en bas entre eux*/
+	padding: 3px 6px; /* cette ligne rajoute au sein des encadrés de l'espace pour que la case aient l'air moins tassée sur elle même */
+	background-color: rgb(145, 149, 237); /* Cette ligne permet que les encadrés ne se confondent pas avec l'arrière plan qui est bleu, ça les mets dans une couleur spécifique (violet en l'occurence) et on voit bien un rectangle qui apparait  */
+	font-family: arial,helvetica,sans-serif;/*cette ligne indique la police de caractère qui va être utilisée*/
+	font-variant: small-caps; /* cette ligne permet de mettre en petites minuscules le texte des encadrés*/
+	font-size: 90%; /* cette ligne controle la taille de la police de caractère si on met 70% à la place de 90% la police de caractère diminue de taille */
+	border-right: 2px solid rgb(92, 85, 224); /* cette ligne met une bordure à droite de l'encadré, ça donne un effet de relief */
+	border-bottom: 2px solid rgb(120, 82, 233); /* cette ligne met une bordure en bas de l'encadré, ça donne un effet de relief (enfin quand c'est associé à la ligne précédente)*/
+}
+
+.infolog {
+	text-align:center;
+	border: 2pt solid rgb(84, 140, 224);
+	padding: 1pt;
+	margin-left: 0px;
+	margin-right: 0px;
+	background: rgb(170, 176, 241);
+}
+
+.errorlog {
+	text-align:center;
+	border: 2pt solid rgb(255, 0, 0);
+	padding: 2pt;
+	margin-left: 0px;
+	margin-right: 0px;
+	background-color: rgb(255, 96, 96);
+}
+
+#page  {
+	position: relative;
+	min-height: 100%;
+}
+
+#container {
+	background-color: white;
+	border: 3px solid black;
+	padding: 2px;
+	padding-bottom: 5%; 
+	width: 100%;
+	margin-left:0%;
+	height: 100%;
+	min-height: 100%;
+	position: relative;
+}
+
+#chartContainer {
+	height: 400px; 
+	width: 80%; 
+	margin: 30px auto;
+}
+
+#page-wrapper {
+	width: 600px;
+	background: #cee1fd;
+	padding: 1em;
+	margin: 1em auto;
+	border-top: 5px solid #69c773;
+	box-shadow: 0 2px 10px rgba(0,0,0,0.8);
+}
+
+#Global {
+	margin-right: auto; 
+	margin-left: auto; 
+	width: 80%; 
+	border: 3px; 
+	display:table;
+}
+
+#Global #fileDisplayArea, #pageAnalysis  {/* Attention si on laisse le float ici ça empeche le camemebert d'etre bien placé*/
+	width:48%;
+	background: #FFF;
+	font-size:0.6em;
+	height:200px;
+	overflow:scroll;
+}
+
+
+button { /* Cette partie va permettre d'avoir une jolie mise en forme pour les boutons*/
+	display: inline-block;
+	margin-top: 5px;
+	padding: 3px 8px;
+	background-color: #b988f1;
+	color: rgb(4, 58, 112);
+	border-radius: 3px;
+  }
+button:hover { /* cette partie fait en sorte que lorsque la souris passe au dessus du boutton ça va afficher une couleur différente, c'est un truc qui nous donne l'impression que le bouton est cliquable*/
+	background-color: #918fee;
+  }
+  
+a:hover {/*cette partie fait que le lien vers la sorbonne nouvelle va afficher une couleur quand la souris passe dessus
+	*/
+	background-color: #918fee;
 }
